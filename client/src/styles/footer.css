@@ -1,0 +1,21 @@
+.container__footer {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer__icons {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+.footer__icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.footer__icon:hover {
+    color: var(--green-dark);
+}

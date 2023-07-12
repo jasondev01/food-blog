@@ -1,0 +1,103 @@
+.container__header {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+.logo h2 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.logo h2 span:nth-child(1) {
+    color: var(--green);
+}
+
+.logo h2 span:nth-child(2) {
+    color: var(--green-dark);
+}
+
+
+
+/********* HEADER BUTTONS *********/
+.header__buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--black);
+}
+
+.user.profile {
+    margin-left: 2rem;
+    user-select: none;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.profile__hover {
+    display: block;
+    position: relative;
+}
+
+.view__menu {
+    position: absolute;
+    right: -20px;
+    top: 360px;
+    background-color: var(--white);
+    padding: 7px 15px;
+    opacity: 1;
+    /* transition: var(--transition); */
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+.none {
+    display: none;
+}
+
+/* .user.profile:hover ~ .view__profile{
+    opacity: 1;
+} */
+
+.user span {
+    font-size: 1rem;
+}
+
+.user:hover {
+    color: var(--green-dark);
+}
+
+.icon {
+    font-size: 22px;
+}
+
+
+/********* NAV *********/
+.nav__items {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.nav__item a {
+    color: var(--black);
+}
+
+.nav__item a:hover {
+    color: var(--green-dark);
+}
+
+/******* Media Query (800px) ********/
+@media screen and (max-width: 800px) {
+    .container__navbar {
+        display: none;
+    }
+}

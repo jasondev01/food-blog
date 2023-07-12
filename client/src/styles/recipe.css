@@ -1,0 +1,40 @@
+.recipe {
+    background-color: var(--bg-green);
+    margin-top: 0;
+    /* padding: 2.5rem 0; */
+    margin-bottom: 1.2rem;
+    height: 670px;
+}
+
+.container__recipe {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+.recipe__info__image {
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: var(--box-shadow-green);
+}
+
+.recipe__cta {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.recipe__cta .btn {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 0.5rem 1.2rem;
+}
+
+.fave-icon {
+    font-size: 1.1rem;
+}

@@ -1,0 +1,127 @@
+.login {
+    background: var(--bg-green);
+}
+
+.container__registerLogin {
+    height: 74vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.__content {
+    display: flex;
+    height: 650px;
+    gap: 5rem;
+    align-items: center;
+}
+
+.__image {
+    width: 650px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 3rem;
+    gap: 1.2rem;
+    min-height: 450px;
+    box-shadow: var(--box-shadow);
+    border-radius: 20px;
+}
+
+.__form h2,
+.__form h3 {
+    text-align: center;
+}
+
+.input__container {
+    position: relative;
+}
+
+.input__container label {
+    position: absolute;
+    bottom: 12px;
+    left: 20px;
+    pointer-events: none;
+    transition: var(--transition);
+}
+
+.__form input {
+    border: 1px solid var(--green-dark);
+    padding: 12px 1.2rem;
+    width: 100%;
+    font-size: 1.2rem;
+    transition: var(--transition);
+}
+
+.input__container input:focus {
+    box-shadow: var(--box-shadow-green);
+}
+
+.input__container input:valid ~ label,
+.input__container input:focus ~ label {
+    transform: translate(-12px, -25px );
+    padding: 1px 5px;
+    background-color: #fff;
+    /* backdrop-filter: blur(15px); */
+    font-size: 14px;
+}
+
+.__form button {
+    width: 100%;
+    padding: 1rem 1.2rem;
+    font-size: 1rem;
+}
+
+.__form span {
+    text-align: center;
+}
+
+.danger {
+    padding: 7px;
+    background: rgb(255, 142, 142);
+    text-align: center;
+    font-size: 14px;
+}
+
+/******* Media Query (1024px) ********/
+@media screen and (max-width: 1024px) {
+    .__content {
+        gap: 3rem;
+    }
+
+    .__image {
+        width: 490px;
+        height: 85%;
+    }
+}
+
+/******* Media Query (800px) ********/
+@media screen and (max-width: 800px) {
+    .__content {
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    .__image {
+        width: 420px;
+        height: 80%;
+    }
+}
+
+/******* Media Query (600px) ********/
+@media screen and (max-width: 600px) {
+    .__content {
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    .__image {
+        display: none;
+    }
+}
