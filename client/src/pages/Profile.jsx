@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { MdOutlineFavorite } from 'react-icons/md'
  
 const Profile = () => {
-    const { user, logoutUser, removeFavoriteRecipe } = useAuthContext();
+    const { user, removeFavoriteRecipe } = useAuthContext();
     const [ favoriteRecipesData, setFavoriteRecipesData ] = useState([]);
 
     const favoriteRecipes = user?.favorites || [];
@@ -43,11 +43,6 @@ const Profile = () => {
             <div className="container container__profile">
                 <div className="profile__header">
                     <h2>{user?.name}, keep track of your favorite recipes!</h2>
-                    {/* <Link to="/" className=""
-                        onClick={e => logoutUser()}
-                    >
-                        Logout
-                    </Link> */}
                 </div>
                 <div className="container__favorites">
                     {

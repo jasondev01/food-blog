@@ -23,7 +23,7 @@ const HeaderButtons = () => {
                             >
                                 <HiOutlineUser className="icon"/>
                                 <span>
-                                    Profile
+                                    {user ? user?.name : 'Profile'}
                                 </span>
                             </div>
                             <div 

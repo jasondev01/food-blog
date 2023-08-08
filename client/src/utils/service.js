@@ -43,7 +43,7 @@ export const fetchDataFromLink = async (link) => {
 };
 
 // login and register user service
-export const baseUrl = 'http://localhost:5000/api';
+export const baseUrl = 'https://soma-fbs.vercel.app/api';
 
 export const postRequest = async (url, body) => {
     const response = await fetch(url, {
